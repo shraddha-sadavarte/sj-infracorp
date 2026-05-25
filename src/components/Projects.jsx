@@ -2,6 +2,15 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaTimes, FaMapMarkerAlt, FaCalendarAlt, FaUser, FaInfoCircle } from "react-icons/fa";
 
+import heroImg from "../assets/hero.png";
+import highwayImg from "../assets/highway-road-construction.png";
+import industrialFabImg from "../assets/industrial fabrication.jpeg";
+import rccWorkImg from "../assets/industrial rcc and civil work 1.jpg.jpeg";
+import internalShedImg from "../assets/internal shed.jpeg";
+import landDevImg from "../assets/land development.jpg.jpeg";
+import buildingImg from "../assets/building construction.jpeg";
+import fabricationShedImg from "../assets/fabrication shed.jpeg";
+
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
   const [selectedProject, setSelectedProject] = useState(null);
@@ -18,7 +27,7 @@ const Projects = () => {
       id: 1,
       title: "Warje Bypass Asphalt Link",
       category: "roadways",
-      image: "https://images.unsplash.com/photo-1544982503-9f984c14501a?q=80&w=1000&auto=format&fit=crop",
+      image: heroImg,
       location: "Warje, Pune",
       client: "Pune Municipal Corporation (PMC)",
       scope: "Constructed 4.2 km of high-durability RCC dual carriage roadway, complete with sub-grade stabilization and cross-drainage conduits.",
@@ -29,7 +38,7 @@ const Projects = () => {
       id: 2,
       title: "Viman Nagar Commercial Arena",
       category: "commercial",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop",
+      image: highwayImg,
       location: "Viman Nagar, Pune",
       client: "Insignia Developers",
       scope: "Reinforced concrete structural skeleton, foundation piling, and architectural civil masonry works for a 12-storey corporate tower.",
@@ -40,7 +49,7 @@ const Projects = () => {
       id: 3,
       title: "Hadapsar Steel Fabrication Yard",
       category: "industrial",
-      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1000&auto=format&fit=crop",
+      image: industrialFabImg,
       location: "Hadapsar MIDC, Pune",
       client: "Apex Tech Engineering",
       scope: "Design, structural fabrication, assembly, and hoisting of 450 metric tons of heavy gantry frameworks and support lattices.",
@@ -51,7 +60,7 @@ const Projects = () => {
       id: 4,
       title: "Chinchwad Ring Road Widening",
       category: "roadways",
-      image: "https://images.unsplash.com/photo-1515162305285-0293e4767cc2?q=80&w=1000&auto=format&fit=crop",
+      image: rccWorkImg,
       location: "Pimpri-Chinchwad, Pune",
       client: "PCMC Municipal Corporation",
       scope: "Four-lane widening of a 6.8 km stretch, drainage alignment, and concrete pavement installation utilizing slip-form paving technology.",
@@ -62,7 +71,7 @@ const Projects = () => {
       id: 5,
       title: "Hinjawadi Tech-Park RCC Decking",
       category: "commercial",
-      image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1000&auto=format&fit=crop",
+      image: internalShedImg,
       location: "Hinjawadi Phase II, Pune",
       client: "Syntel Systems",
       scope: "Sub-level excavation, parking basement RCC retaining walls, and multi-tier concrete flat slab construction.",
@@ -73,11 +82,33 @@ const Projects = () => {
       id: 6,
       title: "Talegaon Automotive Assembly Shed",
       category: "industrial",
-      image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1000&auto=format&fit=crop",
+      image: landDevImg,
       location: "MIDC Talegaon, Pune",
       client: "Varroc Industries",
       scope: "Heavy fabrication and installation of metal roofing, support columns, overhead crane runway structures, and structural cladding.",
       year: "2024",
+      status: "Completed",
+    },
+    {
+      id: 7,
+      title: "Building Construction Project",
+      category: "commercial",
+      image: buildingImg,
+      location: "Mumbai, India",
+      client: "ABC Construction",
+      scope: "Construction of multi-story commercial building with modern architecture.",
+      year: "2022",
+      status: "Completed",
+    },
+    {
+      id: 8,
+      title: "Fabrication Shed Project",
+      category: "industrial",
+      image: fabricationShedImg,
+      location: "Pune Industrial Area",
+      client: "XYZ Industries",
+      scope: "Design and fabrication of steel sheds for storage and manufacturing.",
+      year: "2023",
       status: "Completed",
     },
   ];
